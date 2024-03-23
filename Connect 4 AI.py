@@ -144,7 +144,7 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
 
     if maximizingPlayer:
         value = -math.inf
-        column = random.choice
+        column = random.choice(valid_location)
         for col in valid_location:
             row = get_next_open_row(board, col)
             b_copy = board.copy()
